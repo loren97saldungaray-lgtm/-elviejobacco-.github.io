@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Viejo Bacco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>El Viejo Bacco</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <button id="btn-carrito">Carrito 🛒</button>
+  <div id="carrito">
+    <h3>Tu Carrito</h3>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+  </div>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido a El Viejo Bacco</h2>
+      <p>Descubre los mejores vinos seleccionados cuidadosamente para ti.</p>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="https://via.placeholder.com/250x300?text=Vino+Tinto" alt="Vino Tinto">
+          <h3>Vino Tinto Reserva</h3>
+          <p>$25.00</p>
+          <button data-nombre="Vino Tinto Reserva" data-precio="25">Agregar al carrito</button>
+        </div>
+        <!-- Puedes duplicar productos aquí -->
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nosotros</h2>
+      <p>En <strong>El Viejo Bacco</strong> nos apasiona el vino. Seleccionamos cuidadosamente cada botella para ofrecerte una experiencia única y elegante.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <button class="enviar" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 El Viejo Bacco. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
